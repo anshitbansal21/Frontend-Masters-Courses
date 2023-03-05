@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      @keyframes rainbow {
+        100%,
+        0% {
+          color: rgb(255, 0, 0);
+        }
+        8% {
+          color: rgb(255, 127, 0);
+        }
+        16% {
+          color: rgb(255, 255, 0);
+        }
+        25% {
+          color: rgb(127, 255, 0);
+        }
+        33% {
+          color: rgb(0, 255, 0);
+        }
+        41% {
+          color: rgb(0, 255, 127);
+        }
+        50% {
+          color: rgb(0, 255, 255);
+        }
+        58% {
+          color: rgb(0, 127, 255);
+        }
+        66% {
+          color: rgb(0, 0, 255);
+        }
+        75% {
+          color: rgb(127, 0, 255);
+        }
+        83% {
+          color: rgb(255, 0, 255);
+        }
+        91% {
+          color: rgb(255, 0, 127);
+        }
+      }
+      .rainbow-boi {
+        animation: rainbow 4s infinite linear;
+        font-size: 60px;
+      }
+
+      .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 850px;
+        background-color: black;
+      }
+    </style>
+    <div class="box">
+      <div class="rainbow-boi">Rainbow</div>
+    </div>
+  </body>
+</html>

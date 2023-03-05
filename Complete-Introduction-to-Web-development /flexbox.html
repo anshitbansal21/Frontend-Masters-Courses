@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .box-1 {
+        border: 1px solid black;
+        color: white;
+        background-color: blue;
+        height: 150px;
+        width: 300px;
+      }
+      .box-2 {
+        border: 1px solid black;
+        color: white;
+        background-color: red;
+        height: 100px;
+        width: 300px;
+      }
+      .box-3 {
+        border: 1px solid black;
+        color: white;
+        background-color: green;
+        height: 200px;
+        width: 100px;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* align-items: flex-end; */
+        border: 1px solid black;
+        height: 850px;
+      }
+      .flex-container-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        height: 850px;
+      }
+
+      .flex-container-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        border: 1px solid black;
+        height: 300px;
+      }
+
+      .no-height {
+        height: inherit;
+      }
+    </style>
+    <div class="flex-container">
+      <div class="box-1">1</div>
+      <div class="box-2">2</div>
+      <div class="box-3">3</div>
+    </div>
+
+    <div class="flex-container-2">
+      <div class="box-1">1</div>
+      <div class="box-2">2</div>
+      <div class="box-3">3</div>
+    </div>
+
+    <div class="flex-container-3">
+      <div class="box-1 no-height">1</div>
+      <div class="box-2 no-height">2</div>
+      <div class="box-3 no-height">3</div>
+    </div>
+  </body>
+</html>
